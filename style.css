@@ -329,20 +329,23 @@ header .header-nav{
 .mid-footer{
     width: 100%;
     height: auto;
-    background-color: #34465d;
+    background-color: #232F3E;
     color: #fff;
     font-weight: 400;
     display: flex;
     font-family: 'Amazon Ember', sans-serif;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid #444;
 }
 .mid-footer .footer-container{
-    width: 900px;
-    height: 200px;
+    width: 1000px;
+    /* height: 200px; */
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .mid-footer .footer-container .outer-box{
     width: 100%;
@@ -350,12 +353,13 @@ header .header-nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 .mid-footer .footer-container .outer-box .logos{
     display: flex;
-    gap: 50px;
-    margin-bottom: 20px;
+    gap: 80px;
+    margin-bottom: 30px;
+    align-items: center;
 }
 .mid-footer .footer-container .outer-box .logos img{
     display: inline-block;
@@ -367,8 +371,17 @@ header .header-nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #fff;
-    gap: 10px;
+    border: 1px solid #999;
+    gap: 15px;
+    padding-left: 7px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.mid-footer .footer-container .outer-box .logos .select-lang p{
+    font-size: 14px;
+    font-family: 'Amazon Ember', sans-serif;
+    margin-top: 3px;
+
 }
 .mid-footer .footer-container .outer-box .country{
     display: flex;
@@ -376,5 +389,93 @@ header .header-nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: -1;
+    word-spacing: 10px;
+    line-height: 0.6;
+}
+.mid-footer .footer-container .outer-box .country p.single-name{
+    word-spacing: 2px;
+}
+.top-footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.mid-footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* END FOOTER PART */
+.end-footer{
+    width: 100%;
+    height: auto;
+    background-color: #131A22;
+    color: #ddd;
+    font-family: 'Amazon Ember', sans-serif;
+    display: flex;
+}
+.end-footer .end-footer-container{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.end-footer .end-footer-container .end-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end-footer .end-footer-container .end-box .amazon-services{
+    /* width: 1000px; */
+    display: grid;
+    grid-template-columns: auto auto auto 150px auto;
+    grid-template-rows: 70px 70px;
+    column-gap: 90px;
+    margin-top: 30px;
+    /* margin-bottom: 40px; */
+}
+.end-footer .end-footer-container .end-box .amazon-services .amazon-service{
+    font-size: 12px;
+    font-weight: 300;
+    color: #999;
+    line-height: 14px;
+}
+.end-footer .end-footer-container .end-box .amazon-services .amazon-service .heading-highlight{
+    color: #fff;
+    font-weight: 400;
+}
+.seven{
+    width: 110px;
+}
+.nine{
+    width: 200px;
+}
+
+/* COPYRIGHT PART */
+.copyright{
+    width: 100%;
+    height: 80px;
+    font-family: 'Amazon Ember', sans-serif;
+    background-color: #131921;
+    color: #ddd;
+}
+.copyright .copyright-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+.copyright .copyright-container .top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 12px;
+    letter-spacing: 0px;
 }
